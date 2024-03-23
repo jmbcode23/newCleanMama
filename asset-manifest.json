@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/newCleanMama/static/css/main.1b355c35.css",
+    "main.js": "/newCleanMama/static/js/main.c3e29d62.js",
+    "static/media/family.png": "/newCleanMama/static/media/family.f0658a23983404a333f0.png",
+    "static/media/bag.png": "/newCleanMama/static/media/bag.9eb9822bb267a37886eb.png",
+    "static/media/vacuum_cleaner.jpg": "/newCleanMama/static/media/vacuum_cleaner.0539f9a0beb2e91d5dc2.jpg",
+    "static/media/logo.png": "/newCleanMama/static/media/logo.b2e013bad14308041e11.png",
+    "static/media/CV Jonathan Milolo Beya 3.pdf": "/newCleanMama/static/media/CV Jonathan Milolo Beya 3.41c0aeb1eaf6ef5814ba.pdf",
+    "static/media/triage.jpg": "/newCleanMama/static/media/triage.f4ba1faa2e08a1185adc.jpg",
+    "static/media/portrait-of-a-happy-male-janitor-with-cleaning-equipment-in-office.jpg": "/newCleanMama/static/media/portrait-of-a-happy-male-janitor-with-cleaning-equipment-in-office.02544fcd8388afa913eb.jpg",
+    "static/media/rubbish.jpg": "/newCleanMama/static/media/rubbish.00a89de6c72613241257.jpg",
+    "index.html": "/newCleanMama/index.html",
+    "main.1b355c35.css.map": "/newCleanMama/static/css/main.1b355c35.css.map",
+    "main.c3e29d62.js.map": "/newCleanMama/static/js/main.c3e29d62.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b355c35.css",
+    "static/js/main.c3e29d62.js"
+  ]
+}
