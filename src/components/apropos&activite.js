@@ -6,6 +6,8 @@ import { Collapse, Space, ConfigProvider } from 'antd';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
+const MotionCollapse = motion(Collapse);
+
 const text =
     `
   A dog is a type of domesticated animal.
@@ -19,6 +21,10 @@ const appearOnScrollVariant = {
     hidden2: { opacity: 0, x: 100 },
     visible2: { opacity: 1, x: 0, transition: { duration: 1, delay: 1 } }
 
+}
+const staggeredVariant = {
+    initial: { opacity: 0, y: 100 },
+    animate: { opacity: 1, y: 0, transition: { duration: 2 } },
 }
 
 function AboutActivité() {
@@ -86,7 +92,11 @@ function AboutActivité() {
                     }}
                 >
                     <Space direction="vertical">
-                        <Collapse
+                        <MotionCollapse
+                            variants={staggeredVariant}
+                            initial="initial"
+                            whileInView="animate"
+                            viewport={{ once: true }}
                             collapsible="header"
                             defaultActiveKey={['1']}
                             items={[
@@ -97,7 +107,11 @@ function AboutActivité() {
                                 },
                             ]}
                         />
-                        <Collapse
+                        <MotionCollapse
+                            variants={staggeredVariant}
+                            initial="initial"
+                            whileInView="animate"
+                            viewport={{ once: true }}
                             collapsible="header"
                             defaultActiveKey={['2']}
                             items={[
@@ -108,7 +122,12 @@ function AboutActivité() {
                                 },
                             ]}
                         />
-                        <Collapse
+                        <MotionCollapse
+                            initial="initial"
+                            whileInView="animate"
+                            viewport={{ once: true }}
+
+                            variants={staggeredVariant}
                             collapsible="header"
                             defaultActiveKey={['3']}
                             items={[
