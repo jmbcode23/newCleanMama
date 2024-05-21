@@ -35,8 +35,18 @@ function AboutActivité() {
             exit={{ opacity: 1 }}
         >
             <div className='grid-container'>
-                <img style={{ width: 500, borderRadius: 10 }} src={vacuum} alt='cleaner' />
-                <div>
+                <motion.img className='about' style={{ width: "100%", borderRadius: 10 }} src={vacuum} alt='cleaner' 
+                variants={appearOnScrollVariant}
+                initial='hidden2'
+                whileInView='visible2'
+                viewport={{ once: true }}
+                />
+                <motion.div className='aboutImg'
+                variants={appearOnScrollVariant}
+                initial='hidden1'
+                whileInView='visible1'
+                viewport={{ once: true }}
+                >
                     <h1>ABOUT</h1>
                     <h2>CLEAN MAMA</h2>
                     <p>L'idée de la creation de la société Clean Mama Sarl est née par le soucis
@@ -50,10 +60,8 @@ function AboutActivité() {
                         des déchets, le triage vos produits déclassés, la ventes des déchets pour
                         de fin de recyclage.
                     </p>
-                </div>
-            </div>
-            <div className='grid-container'>
-                <motion.div
+                </motion.div>
+                <motion.div className='mission'
                     variants={appearOnScrollVariant}
                     initial='hidden1'
                     whileInView='visible1'
@@ -71,13 +79,14 @@ function AboutActivité() {
                         aux normes européennes.
                     </p>
                 </motion.div>
-                <motion.img style={{ width: 500, borderRadius: 10 }} src={portrait} alt='cleaner'
+                <motion.img className='missionImg' style={{ width: "100%", borderRadius: 10 }} src={portrait} alt='cleaner'
                     variants={appearOnScrollVariant}
                     initial='hidden2'
                     whileInView='visible2'
                     viewport={{ once: true }}
                 />
             </div>
+   
             <div style={{ textAlign: "center", }}>
                 <h1>NOS ACTIVITES</h1>
                 <h3>COMMENT GERER LES DECHETS ?</h3>

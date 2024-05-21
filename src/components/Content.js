@@ -60,7 +60,7 @@ function Content() {
                         >
                             <Card
                                 className='cart'
-                                style={{ height: 350, color: 'rgb(59, 92, 165)', borderRadius: 50 }}
+                                style={{ height: 350, color: '#fff', borderRadius: 50 }}
                                 hoverable
                                 title={<div className='cardTitle'> {item.title}</div>}
                             >

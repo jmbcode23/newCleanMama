@@ -7,6 +7,7 @@ import {
     MenuUnfoldOutlined,
     PieChartOutlined,
 } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 // import { useNavigate } from 'react-router-dom';
 
 
@@ -34,48 +35,51 @@ function Navbar() {
     };
     // const navigate = useNavigate();
     return (
-        <div style={{ width: 256, position: "fixed", zIndex: 1, }} >
+        // <div style={{ width: 256, position: "fixed", zIndex: 1, }} >
 
-            <ConfigProvider
-                theme={{
-                    components: {
-                        Menu: {
-                            collapsedIconSize: 20,
-                            darkItemColor: 'black',
-                            darkItemBg: 'white',
-                            darkItemHoverBg: '#c4bdda9c',
-                            darkItemSelectedBg: '#c4bdda',
-                            darkItemHoverColor: 'black',
-                            darkItemSelectedColor: 'black',
-                        },
-                        Button: {
-                            defaultBg: '#c4bdda9c',
-                            defaultColor: 'black',
-                        },
-                    },
-                }}
-            >
-                <Button className='toggleButton' onClick={toggleCollapsed} >
-                    {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-                </Button>
+        //     <ConfigProvider
+        //         theme={{
+        //             components: {
+        //                 Menu: {
+        //                     collapsedIconSize: 20,
+        //                     darkItemColor: 'black',
+        //                     darkItemBg: 'white',
+        //                     darkItemHoverBg: '#c4bdda9c',
+        //                     darkItemSelectedBg: '#c4bdda',
+        //                     darkItemHoverColor: 'black',
+        //                     darkItemSelectedColor: 'black',
+        //                 },
+        //                 Button: {
+        //                     defaultBg: '#c4bdda9c',
+        //                     defaultColor: 'black',
+        //                 },
+        //             },
+        //         }}
+        //     >
+        //         <Button className='toggleButton' onClick={toggleCollapsed} >
+        //             {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+        //         </Button>
 
-                <Menu
+        //         <Menu
 
-                    // onClick={({ key }) => {
-                    //     if (key === "/partenaires") {
-                    //         //do this
-                    //     } else {
-                    //         navigate(key);
-                    //     }
-                    // }}
-                    theme='dark'
-                    defaultSelectedKeys={['/']}
-                    defaultOpenKeys={['sub1']}
-                    mode="inline"
-                    inlineCollapsed={collapsed}
-                    items={items}
-                />
-            </ConfigProvider>
+        //             // onClick={({ key }) => {
+        //             //     if (key === "/partenaires") {
+        //             //         //do this
+        //             //     } else {
+        //             //         navigate(key);
+        //             //     }
+        //             // }}
+        //             theme='dark'
+        //             defaultSelectedKeys={['/']}
+        //             defaultOpenKeys={['sub1']}
+        //             mode="inline"
+        //             inlineCollapsed={collapsed}
+        //             items={items}
+        //         />
+        //     </ConfigProvider>
+        // </div>
+        <div style={{position:'relative'}}>
+            <Link>Home</Link>
         </div>
     );
 };

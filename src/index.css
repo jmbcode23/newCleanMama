@@ -23,7 +23,7 @@ body {
 }
 
 .app {
-    background-color: #beb6d6e6;
+    background-color: #FBFBFE;
 }
 
 p {
@@ -47,7 +47,7 @@ p {
 }
 
 .cardTitle {
-    color: rgb(159, 155, 45);
+    color: rgb(95, 94, 94);
     font-weight: 700;
     font-size: 18px;
 }
@@ -65,12 +65,12 @@ p {
 
 .gradient {
     height: 350px;
-    background: #edc0bf;
-    background: linear-gradient(90deg, #edc0bf 0, #c4caef 58%);
+    /* background: #edc0bf; */
+    /* background: #aad24b; */
 }
 
 .cart {
-    background: rgba(255, 255, 255, .7);
+    background: #aad24b;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }

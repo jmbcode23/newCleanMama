@@ -4,18 +4,14 @@ import Navbar from "./components/Navbar";
 import './index.css';
 import { UpOutlined, WhatsAppOutlined } from "@ant-design/icons";
 import Content from "./components/Content";
-import AboutActivité from "./components/apropos&activite";
-import { Route, Routes, useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
-import { AnimatePresence } from "framer-motion";
 
 function App() {
-    const location = useLocation();
 
     return (
 
         <div className="app">
-            <Navbar />
+            {/* <Navbar /> */}
             <SliderCarousel />
             <Content />
             <Footer />

@@ -38,57 +38,14 @@ function Projects() {
 
     return (
         <>
-            <motion.ul className='projects'
+            <motion.div className='projects'
                 initial={{ opacity: 0.2 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 1, duration: 3 }}
                 viewport={{ once: true }}
             >
-                <li className='list'>
-                    <Link className='normal' to='#'>
-                        <div style={{ background: '#3f4bea', width: '100%', height: '100%', }}>
-                            <span>Project 1</span>
-                        </div>
-                    </Link>
-                    <div className='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Organiser des Collectes</p>
-                    </div>
-                </li>
-                <li className='list'>
-                    <Link className='normal' to='#'>
-                        <div style={{ background: '#907bd3', width: '100%', height: '100%', }}>
-                            <span>Project 2</span>
-                        </div>
-                    </Link>
-                    <div className='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Triage des Déchets</p>
-                    </div>
-                </li>
-                <li className='list'>
-                    <Link className='normal' to='#'>
-                        <div style={{ background: '#ddabbd', width: '100%', height: '100%', }}>
-                            <span>Project 3</span>
-                        </div>
-                    </Link>
-                    <div className='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Trouver des Acheteurs</p>
-                    </div>
-                </li>
-                <li className='list'>
-                    <Link className='normal' to='#'>
-                        <div style={{ background: '#907cd3', width: '100%', height: '100%', }}>
-                            <span>Project 4</span>
-                        </div>
-                    </Link>
-                    <div className='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Poubelles Publiques</p>
-                    </div>
-                </li>
-            </motion.ul>
+            <p>Let us do the dirty work <span><Link to={[]} style={{ textDecoration: 'none'}}>Get a Quote</Link></span></p>
+            </motion.div>
         </>
     );
 }

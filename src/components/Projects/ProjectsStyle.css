@@ -234,8 +234,20 @@ li {
 
 /* you can ignore this ones */
 .projects {
-  padding: 0;
-  /* display: flex; it works even without display:flex because these are list items */
+  margin-top: 22px;
+  padding: 20px;
+  text-align: center;
+  background-color: #28741b;
+  border-radius: 10px;
+}
+
+.projects p {
+  margin-right: 30px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.projects span {
 }
 
 ul:after {
